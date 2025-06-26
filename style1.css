@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  /* padding: 1rem; */
+  background-color: #f0f0f0;
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.667);
+  color: white;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+/* Container for choices */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1.5rem;
+}
+
+/* Individual choice buttons */
+.choice {
+  display: flex;
+  width: 35vw;
+  max-width: 165px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+/* Choice images */
+img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Scores container */
+.scores {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Score numbers */
+#user,
+#com {
+  font-size: 3rem;
+}
+
+/* Final result styling */
+.final-result {
+  margin-top: 2rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Result message */
+#result {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+/* Calculate button section */
+.calculate {
+  margin-top: 2rem;
+}
+
+/* Bottom button */
+#restart-btn {
+  margin-top: 1rem;
+  background-color: yellow;
+  width: 150px;
+  height: 40px;
+  color: black;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Make fonts readable on small devices */
+p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+    height: auto;
+    line-height: normal;
+    padding: 1rem 0.5rem;
+  }
+ body{
+    padding-bottom: 1rem;
+ }
+  #user,
+  #com {
+    font-size: 2rem;
+  }
+
+  #result {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  #restart-btn {
+    width: 120px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+
+  .choice {
+    width: 40vw;
+  }
+}
