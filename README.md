@@ -45,7 +45,7 @@ Simply open **index.html** in your favorite browser.
 
 - Result (Win/Lose/Draw) is shown instantly
 ---
-## Code Structure
+## 📂 Project Structure
 
 rock-paper-scissor/
 ├── index.html      # Main game UI
